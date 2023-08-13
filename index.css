@@ -1,0 +1,488 @@
+/* ----------------------------- scroll de rolagem ------------------------------- */
+html {
+  overflow-x: hidden;
+  scroll-behavior:smooth;
+  scroll-padding-top: 10rem; 
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+html::-webkit-scrollbar-thumb {
+  border-radius: 20px; 
+  background:linear-gradient(to top,#008E22, #008E22 50%);
+}
+
+
+/*------------------------------ cor verde quando seleciono texto ------------------*/
+:root{
+  --green:#3f607a;
+}
+*::selection{
+  background:var(--green);
+  color:#ffffff;
+}
+
+/*------------------------------ BODY -----------------------------------------------*/
+body{
+  display: block;
+  padding-top: 70px;
+  margin: none;
+  background-color: #eee;
+  /*background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg'); 
+  background-repeat: repeat;*/
+  background-size: 4%;
+  width: 100%;
+}
+
+/*------------------------------- margem container do menu 1 ------------------------*/
+.container{
+  margin-left: -15px;
+  width: 100%;
+}
+
+
+/*------------------------------- margem da logo -------------------------                                -----------*/
+.navbar-brand{
+  margin-left: -0px;
+}
+@media (min-width: 576px){
+  .container {
+    max-width: 100%; 
+  }
+}
+
+
+
+
+
+
+/*-------------------------------- href menu 1 --------------------------------------*/
+.navbar-toggle:hover {
+  color: black;
+}
+
+
+/*-------------------------------- margem  tópicos do menu 1 -------------------------*/
+.nav-link{
+  margin-right: 0%;
+}
+
+
+/*-------------------------------- minimo deitado do menu 1 --------------------------
+@media screen and (min-width: 766px){
+  .container{
+  margin-left:0%;
+  width: 100%;
+  }
+}
+
+
+/*-------------------------------- minimo deitado do menu 1 --------------------------
+@media screen and (min-width: 1430px){
+  .container{
+    margin-left:0%;
+    width: 100%;
+  }
+  /* margem da logo 
+  .navbar-brand{
+    margin-left: 0%;
+  }
+  /* margem  tópicos 
+  .nav-link{
+    margin-left: 0%;
+  }
+}
+
+
+/*--------------------------------- margem  subtópicos menu 1 -------------------------*/
+.dropdown-menu{
+  margin-left: 0%;
+}
+
+
+/*--------------------------------- background-color / icone de menu 1 p cell  --------*/
+.bg-light {
+  background-color: #c5c5ca!important;
+}
+.navbar-toggler {
+  background-color: #dddddd;
+}
+
+
+/*---------------------------------- menu 1 href c/sem hover color black ---------------*/
+.navbar-default .navbar-nav>li>a[href="#"] {
+  color: #ffffff !important;
+}
+.navbar-default .navbar-nav>li>a:hover[href="#"] {
+  color: #000000 !important;
+}
+
+
+/*---------------------------------- ajuste embaixo do subtópicos menu 1 ----------------*/
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+
+/*---------------------------------- ajuste dos tópicos do menu 1 cel -------------------*/
+@media screen and (max-width: 991px){ 
+  .nav-item {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  } 
+  .nav-item1 {
+    margin-top: 20px;
+    margin-left: 5px;
+  } 
+  .nav-item2 {
+    margin-top: 25px;
+    margin-left: 5px;
+  } 
+  .nav-item3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  } 
+}
+
+
+/*--------------------------------- menu 1 celular/pc ------------------------------------*/
+.dropdown-menu{
+  width: 100%;
+}
+
+
+/*--------------------------------- Estilos para os botões "menu 1" ----------------------*/
+.navbar .navbar-toggle {
+  border-radius: 2px;
+  margin-right: 0%;
+  position: relative;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.4s ease;
+}
+
+
+/*------------------------------- Efeito de sombra nos  botões "menu 1" -----------------*/
+.navbar .navbar-toggle:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0px;
+  direction: rtl;
+  z-index: -1;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  transition: all 0.4s ease;
+}
+
+
+/*------------------------------- Efeito de sombra no hover dos oh botões "menu 1" -------*/
+.navbar .navbar-toggle:hover:after {
+  left: 0 !important;
+  width: 100% !important;
+}
+
+
+/*------------------------------- Estilos de ativação dos botões "menu 1" ----------------*/
+.navbar .navbar-toggle:active {
+  top: 2px;
+}
+
+
+/*------------------------------- Estilos de foco para os  botões "Salas Comerciais" -----*/
+.navbar .navbar-toggle:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+/*------------------------------- menu 1  para pc - botões -------------------------------*/
+@media screen and (min-width: 992px){ 
+  .nav-item {
+    margin-left: 0px;
+  } 
+  .nav-item1 {
+    margin-left: 0px;
+  } 
+  .nav-item2 {
+    margin-left: 0px;
+  } 
+  .nav-item3 {
+    margin-left: 0px;
+  } 
+  /* Estilos para o botão "menu 1" pc */
+  .navbar .navbar-toggle {
+    border-radius: 2px;
+    margin-right: 0%;
+    position: relative;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.4s ease;
+  }
+  /* Efeito de sombra no botão "menu 1 pc" */
+  .navbar .navbar-toggle:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0px;
+    direction: rtl;
+    z-index: -1;
+    box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+    transition: all 0.4s ease;
+  }
+  /* Efeito de sombra no hover do botão "menu 1 pc" */
+  .navbar .navbar-toggle:hover:after {
+    left: 0 !important;
+    width: 100% !important;
+  }
+  /* Estilos de ativação do botão "menu 1 pc" */
+  .navbar .navbar-toggle:active {
+    top: 2px;
+  }
+  /* Estilos de foco para o botão "menu 1 pc" */
+  .navbar .navbar-toggle:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+
+/*------------------------------- hover fundo de cada sub tópico pc e cell ---------------*/
+.dropdown-item:hover{
+  color: #ffffff;
+  transition: all 300ms ease;
+  background-color:  #213E60;
+  transition-delay: 20ms;
+}
+
+
+/*-------- logotipo div_img c/sem hover, cor de fundo menu e foco do botão do menu--------*/
+#logoimg{
+  background-color:transparent;
+  width: 75px;
+  padding: 10px;
+  padding-top: 7px;
+  float:left;
+}
+#logoimg:hover{
+  box-shadow: 0 0 25px #ffffff00;
+  transition: all 300ms ease; 
+  transition-delay: 80ms;
+}
+.fundo_img_div{
+  background-color: rgb(255, 255, 255);
+  margin-top: -14px;
+  margin-bottom: -13px;
+  margin-left: -15px;
+  height:71px;
+  width: 120px;
+  float:left;
+  border-radius: 0px;
+}
+button:focus {
+   outline: none; 
+}
+@media screen and (max-width: 992px){ 
+  .fundo_img_div{
+    margin-left: 0px;
+  }
+}
+/*------------------------------- div da imagem mínimo 985px / 1430 ----------------------
+@media screen and (min-width: 985px){ 
+  .fundo_img_div{
+    background-color: rgb(255, 255, 255);
+    margin: -20px;
+    margin-left: -100%;
+    height:80px;
+    width: 156%;
+    float:left;
+    border-radius: 0px;
+  }
+}
+@media screen and (min-width: 1430px){ 
+  .fundo_img_div{
+    background-color: rgb(255, 255, 255);
+    margin: -20px;
+    margin-left: -100%;
+    height:80px;
+    width: 186%;
+    float:left;
+    border-radius: 0px;
+  }
+}
+*/
+
+/*------------------------------- Estilos para o botão "Salas Comerciais" ----------------*/
+.custom-navbar .custom-navbar-toggle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #000;
+  /*font-family: ;*/
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+
+/*------------------------------- Efeito de sombra no botão "Salas Comerciais" -----------*/
+.custom-navbar .custom-navbar-toggle:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0px;
+  direction: rtl;
+  z-index: -1;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+
+
+/*------------------------------- Estilos de hover para o botão "Salas Comerciais" -------*/
+.custom-navbar .custom-navbar-toggle:hover {
+  color: #008E22;
+}
+
+
+/*------------------------------- Efeito de sombra no hover do botão "Salas Comerciais" --*/
+.custom-navbar .custom-navbar-toggle:hover:after {
+  transition: all .4s ease;
+  left: 0;
+  width: 100%;
+}
+
+
+/*------------------------------- Estilos de ativação do botão "Salas Comerciais" --------*/
+.custom-navbar .custom-navbar-toggle:active {
+  top: 2px;
+}
+
+
+/*------------------------------- Estilos de foco para o botão "Salas Comerciais" --------*/
+.custom-navbar .custom-navbar-toggle:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+/*------------------------------- margem container do menu 2-salas comerciais ------------*/
+.container-custom{
+  align-items: center;
+  width: 100%;
+}
+
+
+/*------------------------------- margem dos tópicos menu 2 - salas comerciais -----------*/
+.custom-nav-item2{
+  margin-bottom: 3px;
+}
+
+
+/*------------------------------- estilizando os tópicos menu 2 - salas comerciais -------*/
+.custom-nav-link{
+  color:  #008E22;
+  /*font-family: ;*/
+}
+.custom-nav-link:hover{
+  color: #000;
+  text-decoration: none;
+}
+
+
+/*-- menu2 ñ no topo E botão salas comerciais quando ficar - fixo no topo da tela(menu2) -*/
+.menu2{
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 69px;
+  transition: background-color 0.3s ease;
+}
+.menu2.fixed{
+  background-color: #213E60;
+  
+  .custom-nav-link{
+    color: #ffffff;
+    /*font-family: ;*/
+  }
+  .custom-nav-link:hover{
+    color: #000;
+    text-decoration: none;
+  }
+  /* Estilos para o botão "Salas Comerciais no topo da tela" */
+  .custom-navbar .custom-navbar-toggle {
+    color: #ffffff;
+    margin-top: 13px;
+    margin-bottom: 9px;
+    /*font-family: ;*/
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    padding-top: 1px;
+    padding-left: 5px;
+    padding-right: 0px;
+    padding-bottom: 1px;
+  }
+  /* Efeito de sombra no botão "Salas Comerciais" no topo da tela */
+  .custom-navbar .custom-navbar-toggle:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow: -5px -5px 18px 0px rgba(255, 255, 255, 0.137), -2px -2px 3px 0px rgba(255, 255, 255, 0.397), 5px 5px 18px 0px #0002, 2px 2px 3px 0px rgba(0, 0, 0, 0.452);
+    transition: all 0.3s ease;
+  }
+  /* Estilos de hover para o botão "Salas Comerciais" no topo da tela */
+  .custom-navbar .custom-navbar-toggle:hover {
+    color: #ffffff;
+  }
+  /* Efeito de sombra no hover do botão "Salas Comerciais - apartir daqui n alterou" (menu2 no topo da tela) */
+  .custom-navbar .custom-navbar-toggle:hover:after {
+    transition: all .4s ease;
+    left: 0;
+    width: 100%;
+  }
+  /* Estilos de ativação do botão "Salas Comerciais" (menu 2 no topo da tela) */
+  .custom-navbar .custom-navbar-toggle:active {
+    top: 2px;
+  }
+  /* Estilos de foco para o botão "Salas Comerciais" (menu 2 no topo da tela) */
+  .custom-navbar .custom-navbar-toggle:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  /*margem container menu 2 no topo da tela*/
+  .container-custom{
+    align-items: center;
+    width: 100%;
+  }
+  /*margem dos tópicos menu 2 no topo da tela- até aqui que n alterou comparado ao button menu2 quando n está no topo da tela (margem de 70px do topo))*/
+  .custom-nav-item2{
+    margin-bottom: 3px;
+  }
+}
+
+
+/*------------------------------- estilizando o botão de modo dark -----------------------*/
